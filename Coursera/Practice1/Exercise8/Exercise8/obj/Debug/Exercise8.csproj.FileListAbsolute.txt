@@ -1,0 +1,13 @@
+c:\users\albert\documents\visual studio 2017\Projects\Exercise8\Exercise8\bin\Debug\Exercise8.exe.config
+c:\users\albert\documents\visual studio 2017\Projects\Exercise8\Exercise8\bin\Debug\Exercise8.exe
+c:\users\albert\documents\visual studio 2017\Projects\Exercise8\Exercise8\bin\Debug\Exercise8.pdb
+c:\users\albert\documents\visual studio 2017\Projects\Exercise8\Exercise8\obj\Debug\Exercise8.csprojResolveAssemblyReference.cache
+c:\users\albert\documents\visual studio 2017\Projects\Exercise8\Exercise8\obj\Debug\Exercise8.exe
+c:\users\albert\documents\visual studio 2017\Projects\Exercise8\Exercise8\obj\Debug\Exercise8.pdb
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\bin\Debug\Exercise8.exe.config
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\bin\Debug\Exercise8.exe
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\bin\Debug\Exercise8.pdb
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\obj\Debug\Exercise8.csprojResolveAssemblyReference.cache
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\obj\Debug\Exercise8.csproj.CoreCompileInputs.cache
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\obj\Debug\Exercise8.exe
+C:\Users\Maxwell\Desktop\Coursera\Practice1\Exercise8\Exercise8\obj\Debug\Exercise8.pdb
