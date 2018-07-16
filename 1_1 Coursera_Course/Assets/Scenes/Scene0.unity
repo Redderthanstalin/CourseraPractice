@@ -113,57 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &102646556
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -0.07
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114905161000706028, guid: 92c6351756fba204882564b7611b64d3,
-        type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4043852786757354, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 92c6351756fba204882564b7611b64d3, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -175,6 +124,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -201,14 +151,14 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -4.85, y: -3}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -5.927711, y: -3.025845}
-  - {x: 6.0142403, y: -3.0577447}
-  - {x: 6.039944, y: 2.9475589}
-  - {x: -6.023087, y: 2.9939969}
-  - {x: -6.0335712, y: -2.9889202}
+  - {x: -0.5, y: 0}
+  - {x: 10.16815, y: 0.0015747547}
+  - {x: 10.157765, y: 5.9985085}
+  - {x: -0.4883442, y: 5.977595}
+  - {x: -0.48582458, y: 0.016708374}
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -262,19 +212,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1756963037 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1183429660399400, guid: 92c6351756fba204882564b7611b64d3,
-    type: 2}
-  m_PrefabInternal: {fileID: 102646556}
---- !u!114 &1756963039
+--- !u!114 &519420033
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1756963037}
+  m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c979479ce8a28af4094d8ab267007bac, type: 3}
+  m_Script: {fileID: 11500000, guid: 333d443cec84de447b5ade9a3cf6571b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pf_YellowBear: {fileID: 1615158791435788, guid: 95aa60cb816a8ff45a4c070b6bc328c3,
+    type: 2}
+  pf_GreenBear: {fileID: 1127381507219962, guid: 998e696a021d32a47aa64f341f41fc5f,
+    type: 2}
+  pf_PurpleBear: {fileID: 1071138063563738, guid: d190a0a3aac571e42b5835d8c8984875,
+    type: 2}
