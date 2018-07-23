@@ -23,8 +23,23 @@ GameObject:
   - component: {fileID: 50532031165719304}
   - component: {fileID: 114446096220568264}
   - component: {fileID: 58007082291435168}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: SpaceShip
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1667156307366284
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4536009829600450}
+  m_Layer: 10
+  m_Name: EndOfGun
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39,10 +54,24 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 4536009829600450}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
+--- !u!4 &4536009829600450
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1667156307366284}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0.632, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4353759287349126}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!50 &50532031165719304
 Rigidbody2D:
   serializedVersion: 4
@@ -89,6 +118,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b74969e62bd83b54ab41ccf30301b4c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 1127880705013614, guid: f3ea4222e2110734e8c00b9f6dbb40c0, type: 2}
+  EndOfGun: {fileID: 1667156307366284}
 --- !u!212 &212564102428153900
 SpriteRenderer:
   m_ObjectHideFlags: 1

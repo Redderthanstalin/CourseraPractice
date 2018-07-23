@@ -38,6 +38,11 @@ public class Timer : MonoBehaviour
 			}
 		}
 	}
+
+    public float ElapsedSeconds
+    {
+        get { return elapsedSeconds; }
+    }
 	
 	/// <summary>
 	/// Gets whether or not the timer has finished running

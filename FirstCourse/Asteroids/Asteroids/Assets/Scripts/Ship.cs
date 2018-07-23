@@ -7,6 +7,12 @@ public class Ship : MonoBehaviour {
     //Reference to the Rigidbody
     Rigidbody2D rgbd;
 
+    [SerializeField]
+    GameObject bullet;
+
+    [SerializeField]
+    GameObject EndOfGun;
+
     //Vector2 to determine ships direction when adding force
     Vector2 thrustDirection = new Vector2(1, 0);
     float rotationInRadians;
@@ -27,10 +33,7 @@ public class Ship : MonoBehaviour {
         rgbd = gameObject.GetComponent<Rigidbody2D>();
         coll = gameObject.GetComponent<CircleCollider2D>();
         radius = coll.radius;
-
-        Debug.Log("Screen left is: " + ScreenUtils.ScreenLeft);
-        
-
+       
     }
 	
 	// Update is called once per frame
@@ -65,6 +68,11 @@ public class Ship : MonoBehaviour {
             thrustDirection = new Vector2(newX, newY);
 
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            SpawnBullet();
+        }
 	}
 
     void FixedUpdate()
@@ -85,24 +93,38 @@ public class Ship : MonoBehaviour {
 
         if (currentPosition.x > shipRight)
         {
-            currentPosition.x = ScreenUtils.ScreenLeft - radius;
+            currentPosition.x = shipLeft;
             transform.position = currentPosition;
         }
         else if (currentPosition.x < shipLeft)
         {
-            currentPosition.x = ScreenUtils.ScreenRight - radius;
+            currentPosition.x = shipRight;
             transform.position = currentPosition;
         }
         if (currentPosition.y > shipTop)
         {
-            currentPosition.y = ScreenUtils.ScreenBottom + radius;
+            currentPosition.y = shipBottom;
             transform.position = currentPosition;
         }
         else if(currentPosition.y < shipBottom)
         {
-            currentPosition.y = ScreenUtils.ScreenTop + radius;
+            currentPosition.y = shipTop;
             transform.position = currentPosition;
         }
     }
+
+    void SpawnBullet()
+    {
+        Vector3 currentPos = EndOfGun.transform.position;
+
+
+        GameObject bulletInstance = GameObject.Instantiate(bullet, currentPos, EndOfGun.transform.rotation) as GameObject;
+        if(bulletInstance != null)
+        {
+            Bullet bulletRef = bulletInstance.GetComponent<Bullet>();
+            bulletRef.Shoot(thrustDirection);
+        } 
+    }
+
 }
  
